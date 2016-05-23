@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ahorcado</title>
+	<script type="text/javascript" src="ahorcado.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Juego del ahorcado</h1>
+		<h3>Adivina la palabra</h3>
+	</header>
+
+	<canvas id="c"></canvas>
+	<p>
+		Elige una letra:
+		<input type="text"  size="1" maxlength="1" id="letra" onKeydown="Javascript: if (event.keyCode==13) agregarLetra();">
+	<input type="button" id="boton" value="Boom!!">
+	<input type="button" value="Jugar de nuevo" onclick="document.location.reload();" >
+	</p>	
+	<h2 id="pista">_ _ _</h2>
+	
+	<script type="text/javascript">
+		iniciar();
+
+	</script>
+</body>
+</html>
